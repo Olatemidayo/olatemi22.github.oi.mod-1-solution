@@ -21,8 +21,7 @@
                 var arrayDishesWithoutEmptys = arrayDishes.filter(function(v) {
                     return v.trim() !== '';
                 });
-
-                if (arrayDishesWithoutEmptys.length <= 5) {
+                if (arrayDishesWithoutEmptys.length <= 2) {
                     $scope.message = 'Enjoy!';
                 } else {
                     $scope.message = 'Too much!';
